@@ -1,0 +1,110 @@
+/* 🔹 Container */
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: #f5f7fb;
+}
+
+/* 🔹 Form Box */
+.register-form {
+  border: 1px solid #ddd;
+  padding: 35px;
+  width: 400px;
+  max-width: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Heading */
+.register-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* 🔹 Input Fields */
+.register-form input,
+.register-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* 🔹 Input Focus */
+.register-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* 🔹 Button */
+.register-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(51, 1, 1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-form button:hover {
+  background-color: rgb(80, 2, 2);
+}
+
+/* 🔹 Links (Login/Register switch) */
+.register-form a {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-form a:hover {
+  text-decoration: underline;
+}
+
+/* 🔥 RESPONSIVE */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .register-form {
+    width: 90%;
+    padding: 25px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .register-form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .register-form h2 {
+    font-size: 20px;
+  }
+
+  .register-form input {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .register-form button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .form-container {
+    padding: 10px;
+  }
+}
